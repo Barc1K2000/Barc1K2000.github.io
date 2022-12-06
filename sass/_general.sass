@@ -1,0 +1,399 @@
+
+nav 
+	position: fixed
+	width: 100% 
+	height: 50px 
+	background: #212121 
+	z-index: 1
+	transition: 0.3s all
+.menu
+	padding: 13px 70px 
+	margin: 0 
+	list-style-type: none 
+	display: flex 
+	justify-content: space-between 
+	&_link 
+		text-decoration: none 
+		font-weight: 300 
+		font-size: 15px 
+		color: #FFFFFF 
+	&_item 
+		border-right: 2px dotted black 
+		padding-right: 45px
+		margin: 0 auto
+		&:last-child
+			border-right: none
+.subheader
+	margin-top: 50px
+	position: absolute 
+	width: 100% 
+	background: rgba(0, 0, 0, 0.6) 
+	height: 87px 
+	&_logo 
+		display: block 
+		max-width: 100% 
+		margin-top: 16px 
+	&_official 
+		font-weight: 100 
+		font-size: 13px 
+		color: #FFFFFF 
+		opacity: 0.5 
+		margin-top: 6px 
+	&_call 
+		font-weight: 300 
+		font-size: 12px 
+		color: #FFFFFF 
+		margin-top: 19px 
+		text-align: right 
+	&_phone 
+		display: block 
+		text-align: right 
+		font-weight: 400 
+		font-size: 22px 
+		color: #FFFFFF 
+		text-decoration: none 
+		margin-top: 3px 
+		line-height: 18px 
+	&_btn 
+		margin-top: 19px 
+		width: 172px 
+		height: 46px 
+		background: linear-gradient(0deg, $blue-color 0%, #4CE2FF 100%) 
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12) 
+		border-radius: 4px 
+		font-weight: 400 
+		font-size: 14px 
+		text-align: center 
+		text-transform: uppercase 
+		color: #FFFFFF 
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
+		border: none 
+		+btn_hover
+.hamburger
+	display: none
+.promo 
+	min-height: 800px 
+	padding: 150px 0 135px 0 
+	background: url("../img/bg/uber_bg.jpg") center center/cover no-repeat 
+	&_header 
+		font-weight: 900 
+		font-size: 60px 
+		text-align: center 
+		color: #FFFFFF 
+	&_subheader 
+		font-size: 36px 
+		font-weight: 700 
+		text-align: center 
+		color: #FFFFFF 
+		margin-top: 22px 
+	&_descr 
+		font-weight: 400 
+		font-size: 18px 
+		line-height: 24px 
+		text-align: center 
+		color: #FFFFFF 
+		margin-top: 16px 
+	&_btn 
+		display: block 
+		margin: 0 auto 
+		margin-top: 116px 
+		width: 259px 
+		height: 63px 
+		background: linear-gradient(0deg, $blue-color 0%, #4CE2FF 100%) 
+		box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12) 
+		border-radius: 4px 
+		border: none 
+		font-weight: 400 
+		font-size: 18px 
+		text-align: center 
+		text-transform: uppercase 
+		color: #FFFFFF 
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
+		+btn_hover
+.advantages 
+	padding: 20px 0 64px 0 
+.label 
+	margin: 0 auto 
+	width: 115px 
+	height: 27px 
+	background: #000000 
+	font-weight: 400 
+	font-size: 11px 
+	text-align: center 
+	text-transform: uppercase 
+	line-height: 29px 
+	color: #FFFFFF 
+.title 
+	font-weight: 700 
+	font-size: 38px 
+	text-align: center 
+	text-transform: uppercase 
+	margin-top: 33px 
+	color: #222222 
+.subtitle
+	font-weight: 400
+	font-size: 17px
+	text-align: center
+	color: #222222
+.advantage
+	display: flex 
+	align-items: center 
+	justify-content: center 
+	column-gap: 25px 
+	margin-top: 35px 
+	&_round 
+		display: flex 
+		align-items: center 
+		justify-content: center 
+		height: 116px 
+		width: 116px 
+		background: $blue-color
+		border-radius: 100% 
+	&_descr 
+		display: flex 
+		flex-direction: column 
+		row-gap: 5px 
+		width: 345px 
+		&_header 
+			font-weight: 400 
+			font-size: 17px 
+			color: $blue-color
+			line-height: 21px 
+		&_text 
+			font-weight: 300 
+			font-size: 15px 
+			color: #202020 
+			line-height: 21px 
+.mobile 
+	min-height: 864px
+	padding: 48px 0 80px 0
+	background: url("../img/bg/mobile_bg.jpg") center center / cover no-repeat
+	.row
+		margin-top: 32px
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 91px
+		&_1
+			background: url("../img/mobile/1.png") center center / cover no-repeat
+		&_2
+			background: url("../img/mobile/2.png") center center / cover no-repeat
+		&_3
+			background: url("../img/mobile/3.png") center center / cover no-repeat
+		&_4
+			background: url("../img/mobile/4.png") center center / cover no-repeat
+		&_5
+			background: url("../img/mobile/5.png") center center / cover no-repeat
+		&_6
+			background: url("../img/mobile/6.png") center center / cover no-repeat
+		&_subtitle
+			font-weight: 400
+			font-size: 24px
+			line-height: 31px
+			text-align: center
+			text-transform: uppercase
+			color: #FFFFFF
+		&_plus
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			bottom: 34px
+			left: 50%
+			width: 26px
+			height: 26px
+			background-color: #000
+			margin: 0 auto
+			border-radius: 100%
+			cursor: pointer
+			&:before
+				content:""
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $blue-color
+				transition: 0.3s all
+			&:after
+				content:""
+				position: absolute
+				display: block
+				left: 50%
+				transform: translateX(-50%)
+				width: 2px
+				height: 14px
+				background-color: $blue-color
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: $red-color
+				
+.posibility
+	padding: 54px 0 137px 0
+	background: url("../img/bg/posibility_bg.jpg") center center / cover no-repeat
+	.label
+		background:#FFF
+		color:#070716
+	.title
+		color: #FFF
+	.subtitle
+		color: #FFF
+	&_car
+		display: block
+		margin: 0 auto
+		margin-top: 54px
+	&_slogan
+		display: flex
+		justify-content: center
+		text-align: center
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		color: #222222
+.require
+	padding: 68px 0 87px 0
+	&_wrapper
+		margin:33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		font-weight: 400
+		font-size: 22px
+		line-height: 24px
+		color: #1CA8C3
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			line-height: 24px
+			color: #222222
+			margin-bottom: 10px
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				left: -32px
+				top: 2px
+				width: 21px
+				height: 20px
+				background: url("../icons/require/check_blue.svg") center center / cover no-repeat
+	&_descr
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		color: #1CA8C3
+	.warning
+		.require_title
+			color: $red-color
+		.require_list
+			li
+				&:before
+					background: url("../icons/require/check_red.svg") center center / cover no-repeat
+.cities
+	min-height: 716px
+	background: url("../img/bg/cities_bg.jpg") center center / cover no-repeat
+	padding: 48px 0 21px 0
+	position: relative
+	.label
+		background: #FFF
+		color:#070716
+	.title
+		color:#FFF
+	.subtitle
+		color:#FFF
+	&_look
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)
+		a
+			text-decoration: none
+			font-weight: 400
+			font-size: 15px
+			text-align: center
+			text-transform: uppercase
+			color: #1FBAD6
+			white-space: nowrap
+footer
+	display: flex
+	padding: 20px 23px	
+	justify-content: space-between
+	align-items: center
+	position: relative
+	ul
+		padding: 0
+		margin-bottom: 0
+	&:before
+			content:""
+			position: absolute
+			top: 11px
+			left: 50%
+			transform: translateX(-50%)
+			width: 300px
+			height: 7px
+			background: #1FBAD6
+	.social
+		&_list
+			display: flex
+			min-width: 260px
+			list-style: none
+			column-gap: 6px
+			color:#fff
+			li
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 35px
+				width: 35px
+				border-radius: 100%
+				background: #070716
+	.navigation
+		&_current-list
+			display: flex
+			column-gap: 50px
+			justify-content: center
+			list-style-type: none
+			margin-top: 30px
+			li
+				a
+					font-weight: 300
+					font-size: 15px
+					text-transform: uppercase
+					color: #070716
+					text-decoration: none
+		&_other-list
+			display: flex
+			column-gap: 35px
+			justify-content: center
+			list-style-type: none
+			margin-top: 10px
+			li
+				a
+					font-weight: 300
+					font-size: 11px
+					text-transform: uppercase
+					color: #999999
+					text-decoration: none
+		&_language
+			font-weight: 400
+			font-size: 11px
+			text-align: center
+			text-transform: uppercase
+			color: #1FBAD6
+			margin-top: 10px
+	.markets
+		&_list
+			display: flex
+			list-style-type: none
+			column-gap: 10px
+			img
+				width: 80px
+				height: 27px
+.xs-visible
+	display: none
